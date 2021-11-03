@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FE06E52-6AC4-46BB-8E9F-71CDC60ECADE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Global_Computing_Solutions</RootNamespace>
+    <AssemblyName>Global Computing Solutions</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addAssignment.Designer.cs">
+      <DependentUpon>addAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addbilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addbilling.Designer.cs">
+      <DependentUpon>addbilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addcertification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcertification.Designer.cs">
+      <DependentUpon>addcertification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDuty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDuty.Designer.cs">
+      <DependentUpon>AddDuty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProject.Designer.cs">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addregion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addregion.Designer.cs">
+      <DependentUpon>addregion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSchedule.Designer.cs">
+      <DependentUpon>AddSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addskills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addskills.Designer.cs">
+      <DependentUpon>addskills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTaskSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTaskSkills.Designer.cs">
+      <DependentUpon>AddTaskSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addworklog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addworklog.Designer.cs">
+      <DependentUpon>addworklog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assignment.Designer.cs">
+      <DependentUpon>Assignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillingNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillingNumber.Designer.cs">
+      <DependentUpon>BillingNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Certification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Certification.Designer.cs">
+      <DependentUpon>Certification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duty.Designer.cs">
+      <DependentUpon>Duty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCSDevDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GCSDevDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project.Designer.cs">
+      <DependentUpon>Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Region.Designer.cs">
+      <DependentUpon>Region.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skills.Designer.cs">
+      <DependentUpon>Skills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskSkills.Designer.cs">
+      <DependentUpon>TaskSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAssignment.Designer.cs">
+      <DependentUpon>UpdateAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBilling.Designer.cs">
+      <DependentUpon>UpdateBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatecertification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatecertification.Designer.cs">
+      <DependentUpon>updatecertification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomer.Designer.cs">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDuty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDuty.Designer.cs">
+      <DependentUpon>UpdateDuty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateemployee.Designer.cs">
+      <DependentUpon>updateemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProject.Designer.cs">
+      <DependentUpon>UpdateProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateregion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateregion.Designer.cs">
+      <DependentUpon>updateregion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSchedule.Designer.cs">
+      <DependentUpon>UpdateSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSkills.Designer.cs">
+      <DependentUpon>UpdateSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTaskSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTaskSkills.Designer.cs">
+      <DependentUpon>UpdateTaskSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateWorkLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateWorkLog.Designer.cs">
+      <DependentUpon>UpdateWorkLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkLog.Designer.cs">
+      <DependentUpon>WorkLog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addAssignment.resx">
+      <DependentUpon>addAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addbilling.resx">
+      <DependentUpon>addbilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addcertification.resx">
+      <DependentUpon>addcertification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDuty.resx">
+      <DependentUpon>AddDuty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProject.resx">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addregion.resx">
+      <DependentUpon>addregion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSchedule.resx">
+      <DependentUpon>AddSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addskills.resx">
+      <DependentUpon>addskills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTaskSkills.resx">
+      <DependentUpon>AddTaskSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addworklog.resx">
+      <DependentUpon>addworklog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assignment.resx">
+      <DependentUpon>Assignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillingNumber.resx">
+      <DependentUpon>BillingNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certification.resx">
+      <DependentUpon>Certification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duty.resx">
+      <DependentUpon>Duty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project.resx">
+      <DependentUpon>Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Region.resx">
+      <DependentUpon>Region.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skills.resx">
+      <DependentUpon>Skills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskSkills.resx">
+      <DependentUpon>TaskSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAssignment.resx">
+      <DependentUpon>UpdateAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBilling.resx">
+      <DependentUpon>UpdateBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatecertification.resx">
+      <DependentUpon>updatecertification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomer.resx">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDuty.resx">
+      <DependentUpon>UpdateDuty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateemployee.resx">
+      <DependentUpon>updateemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProject.resx">
+      <DependentUpon>UpdateProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateregion.resx">
+      <DependentUpon>updateregion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSchedule.resx">
+      <DependentUpon>UpdateSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSkills.resx">
+      <DependentUpon>UpdateSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTaskSkills.resx">
+      <DependentUpon>UpdateTaskSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateWorkLog.resx">
+      <DependentUpon>UpdateWorkLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkLog.resx">
+      <DependentUpon>WorkLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GCSDevDataSet.xsc">
+      <DependentUpon>GCSDevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GCSDevDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GCSDevDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GCSDevDataSet.xss">
+      <DependentUpon>GCSDevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
